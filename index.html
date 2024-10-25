@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Donaciones</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>¡Ayúdanos con tu donación!</h1>
+        <p>Tu apoyo es crucial para continuar con nuestra misión. Por favor, considera hacer una donación.</p>
+        
+        <form id="donationForm">
+            <label for="amount">Monto de la donación:</label>
+            <input type="number" id="amount" placeholder="Ejemplo: 10" required>
+            
+            <label for="name">Tu nombre:</label>
+            <input type="text" id="name" placeholder="Tu nombre" required>
+            
+            <button type="submit">Donar</button>
+        </form>
+        
+        <div id="message" class="message"></div>
+        
+        <h2>O haz una donación directa:</h2>
+        <form action="https://www.paypal.com/donate/?hosted_button_id=DTB827H5V4A4A" method="post" target="_blank">
+            <button type="submit" style="border: none; background: none; cursor: pointer;">
+                <img src="https://www.paypalobjects.com/webstatic/en_US/i/btn/png/btn_buynow_107x26.png" alt="Donar con PayPal" />
+            </button>
+        </form>
+
+        <h2>Escanea el código QR para donar:</h2>
+        <p>Utiliza la imagen a continuación para donar fácilmente:</p>
+        <img src="Código QR.png" alt="Código QR para Donar" style="display: block; margin: 20px auto; width: 200px; height: auto;">
+        
+        <p>También puedes usar el siguiente enlace:</p>
+        <a href="https://www.paypal.com/donate/?hosted_button_id=DTB827H5V4A4A" target="_blank">Donar aquí</a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
